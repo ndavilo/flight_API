@@ -8,10 +8,10 @@ class FlightSerializer(serializers.ModelSerializer):
 
 class PassengerSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Flight
+        model = Passenger
         fields = '__all__'
 
 class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Flight
+        model = Reservation
         fields = '__all__'
